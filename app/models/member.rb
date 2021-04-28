@@ -4,3 +4,8 @@ class Member < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
 end
+
+class Ability
+  include CanCan::Ability
+
+end

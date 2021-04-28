@@ -27,6 +27,7 @@ gem 'rack-cors', :require => 'rack/cors'
 
 gem 'devise'
 
+# Use 
 gem 'cancancan'
 
 # Use Active Storage variant
