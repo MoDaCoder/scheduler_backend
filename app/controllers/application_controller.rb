@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   before_action :authenticate_member!
 
   before_action :configure_permitted_parameters, if: :devise_controller?
+
+  def home
+    @member = current_member ? current_member.email.split("@")[0]:nil
+end
   
   protected
   

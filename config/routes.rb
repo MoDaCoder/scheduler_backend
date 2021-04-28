@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     sessions: 'members/sessions'
   }
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-    root to: "static#home"
+  # root to: 'application#home'
+  root 'application#home'
 
     match '/members',   to: 'members#index',   via: 'get'
 end
